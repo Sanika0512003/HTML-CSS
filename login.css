@@ -1,0 +1,129 @@
+/* ------------------------- Version 2.0 ---------------------------- */
+/* Setting */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+html {font-size: 10px;}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/loginbg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+/* Login box */
+.login-box {
+    width: 30rem;
+    height: 30rem;
+    padding: 1rem 2rem;
+    background: #b1b1b14c;
+    backdrop-filter: blur(.5rem);
+    border: .2rem solid rgba(255, 255, 255, 0.589);
+    border-radius: 3rem;
+    box-shadow: 0 0 2rem rgb(255, 0, 0);
+}
+.login-box h1 {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+}
+.login-box .input-box {
+    width: 100%;
+    height: 3rem;
+    margin: 3rem 0;
+    text-align: center;
+    justify-content: center;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: .2rem solid white;
+    outline: none;
+    padding: .5rem;
+    color: white;
+}
+.input-box input::placeholder{color: white;}
+.input-box input:focus {border-bottom: .2rem solid rgb(0, 200, 255); }
+.input-box i {
+    font-size: 2rem;
+    position: absolute;
+    transform: translateY(.5rem);
+    right: 2rem;
+    color: white;
+}
+.input-box input:focus + i{color: rgb(0, 200, 255);}
+.input-box input:focus::placeholder{color: rgb(0, 200, 255);}
+.login-box button {
+    width: 100%;
+    background-color:transparent;
+    border: .2rem solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    padding: .5rem;
+    margin: 3rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+.login-box button:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+/* Login Error */
+.login-box .error-box {
+    width: 100%;
+    height: 3rem;
+    margin: 3rem 0;
+    text-align: center;
+    justify-content: center;
+}
+.error-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: .2rem solid red;
+    outline: none;
+    padding: .5rem;
+    color: white;
+}
+.error-box input::placeholder{color: red;}
+.error-box input:focus {border-bottom: .2rem solid white; }
+.error-box i {
+    font-size: 2rem;
+    position: absolute;
+    transform: translateY(.5rem);
+    right: 2rem;
+    color: red;
+}
+.error-box input:focus + i{color: white;}
+.error-box input:focus::placeholder{color: white;}
+.error-msg {margin: 1rem 0;}
+.error-msg p{
+    margin: .5rem 0;
+    color: red;
+    text-align: left;
+    margin-left: 3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.error-msg i {
+    font-size: 2rem;
+    position: absolute;
+    transform: translateY(-.2rem);
+    left: -20.5rem;
+    color: red;
+}
+/* ------------------------- Version 2.0 ---------------------------- */
